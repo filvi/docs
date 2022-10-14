@@ -429,7 +429,7 @@ Of course, the Storefront implementation is still missing, so your element would
 
 ## Storefront implementation
 
-Just like the CMS blocks, each element's storefront representation is always expected in the directory `platform/src/Storefront/Resources/views/storefront/element`. In there, a twig template named after your custom element is expected, in this case a file named `cms-element-dailymotion.html.twig`.
+Just like the CMS blocks, each element's storefront representation is always expected in the directory `<plugin root>/src/Storefront/Resources/views/storefront/element`. In there, a twig template named after your custom element is expected, in this case a file named `cms-element-dailymotion.html.twig`.
 
 So go ahead and re-create that structure in your plugin: `<plugin root>/src/Resources/views/storefront/element/`
 
@@ -437,7 +437,7 @@ In there create a new twig template named after your element, so `cms-element-da
 
 The template for this is super easy though, just like it's been in your main component for the administration. Just add an iFrame again. Simply apply the same styles like in the administration, 100% to both height and width that is.
 
-{% code title="platform/src/Storefront/Resources/views/storefront/element/cms-element-dailymotion.html.twig" %}
+{% code title="<plugin root>/src/Storefront/Resources/views/storefront/element/cms-element-dailymotion.html.twig" %}
 {% raw %}
 
 ```markup
